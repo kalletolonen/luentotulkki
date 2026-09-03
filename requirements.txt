@@ -1,0 +1,8 @@
+# Core Transcription Engine (Apple Silicon Metal GPU accelerated)
+mlx-whisper>=0.4.0
+
+# Markdown Parsing & HTML Generation for PDF Reports
+markdown>=3.5.0
+
+# Fallback Transcription Engine (CPU / CUDA / Non-Apple Silicon)
+faster-whisper>=1.0.0

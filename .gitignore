@@ -1,0 +1,52 @@
+# ==============================================================================
+# Git Ignore Rules - Local Pipeline & Tools Only
+# Prevents committing downloaded videos, audio, slides, transcripts, or notes
+# ==============================================================================
+
+# Python virtual environments & bytecode
+whisper-env/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Local media, lecture inputs & stream segments
+*.mp4
+*.m4v
+*.mkv
+*.webm
+*.avi
+*.mov
+*.wav
+*.mp3
+*.m4a
+*.aac
+*.ts
+*.m3u8
+temp_audio*
+
+# Generated lecture folders (e.g. 01_..., 02_..., 03_...)
+[0-9][0-9]_*/
+
+# Generated slide images & folders
+slides/
+*/slides/
+*.jpg
+*.jpeg
+*.png
+
+# Generated transcripts, subtitles, summaries & documents
+*.srt
+*.txt
+!requirements.txt
+*.pdf
+*.html
+*_yhteenveto.md
+kurssiyhteenveto.md
+
+# OS & browser temporary profiles
+.DS_Store
+Thumbs.db
+.chrome_test_profile/
+chrome_headless_*
